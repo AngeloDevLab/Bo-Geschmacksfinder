@@ -4,21 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/icons/favicon.ico">
     <title>Geschmacksfinder</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script type="module" src="./scripts/main.js"></script>
 </head>
 
 <body>
+
+    <header>
+        <div class="header-content max-content">
+            <img src="./assets/icons/bofrost_logo.svg" alt="Bofrost-Logo">
+        </div>
+
+    </header>
+
     <div id="app">
-        <h1>Geschmacksfinder</h1>
 
-        <div id="question-container"></div>
-        <div id="answers-container"></div>
+        <div class="question-card">
 
-        <button id="next-btn">Weiter</button>
+            <h1>
+                Geschmacks<br class="mobile-break">finder
+            </h1>
+
+            <div id="question-container"></div>
+
+            <p id="selection-info"></p>
+
+            <div id="answers-container"></div>
+
+            <button id="next-btn">Weiter</button>
+
+        </div>
+
     </div>
 
-    <script src="script.js"></script>
+
 </body>
 
 </html>

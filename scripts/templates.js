@@ -2,16 +2,20 @@ export function getResultsTemplate(topResult, results) {
     return `
         <div class="results-card">
 
-            <h1>
-                ${topResult.emoji}
-                ${topResult.name}
-            </h1>
+            <div class="result-hero">
 
-            <p class="result-percent">
-                Du bist zu
-                ${topResult.percent}%
-                ${topResult.name}
-            </p>
+                <h1>
+                    <img class="result-hero-icon" src="${topResult.icon}" alt="${topResult.name}">
+                    ${topResult.name}
+                </h1>
+
+                <p class="result-percent">
+                    Du bist zu
+                    ${topResult.percent}%
+                    ${topResult.name}
+                </p>
+
+            </div>
 
             <p class="result-description">
                 ${topResult.description}
@@ -31,7 +35,7 @@ export function getResultsTemplate(topResult, results) {
 
             <a href="https://www.bofrost.de" target="_blank">
                 <button id="cta-btn">
-                    Passende Produkte entdecken
+                    ${topResult.ctaText}
                 </button>
             </a>
 
@@ -45,7 +49,7 @@ function getBarTemplate(result) {
 
             <div class="result-bar-header">
                 <span>
-                    ${result.emoji}
+                    <img class="profile-icon" src="${result.icon}" alt="${result.name}">
                     ${result.name}
                 </span>
 

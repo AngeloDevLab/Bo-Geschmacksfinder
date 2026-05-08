@@ -2,15 +2,15 @@ export const profiles = [
     {
         id: "fast",
         name: "Schnell & Praktisch",
-        emoji: "⚡",
+        icon: "./assets/images/lightning.png",
         description: "Du magst einfache und schnelle Lösungen für den Alltag.",
         color: "#f59e0b",
 
         recommendations: [
-            "Fertiggerichte",
+            "Fertige Gerichte",
             "Pfannengerichte",
-            "Schnelle Küche",
-            "Kleine Portionen"
+            "Pizza",
+            "Snacks"
         ],
 
         ctaText:
@@ -19,7 +19,7 @@ export const profiles = [
     {
         id: "comfort",
         name: "Komfort-Genießer",
-        emoji: "🍝",
+        icon: "./assets/images/convenient.png",
         description: "Du liebst klassische Gerichte und ausgewogene Mahlzeiten.",
         color: "#ef4444",
 
@@ -33,17 +33,16 @@ export const profiles = [
         ctaText:
             "Entdecke beliebte Klassiker"
     },
-
     {
         id: "healthy",
         name: "Gesund & Leicht",
-        emoji: "🥗",
+        icon: "./assets/images/healthy.png",
         description: "Du achtest auf bewusste Ernährung und leichte Gerichte.",
         color: "#10b981",
 
         recommendations: [
             "Gemüsegerichte",
-            "Bowls",
+            "High Protein",
             "Fischgerichte",
             "Leichte Küche"
         ],
@@ -51,11 +50,10 @@ export const profiles = [
         ctaText:
             "Entdecke leichte und frische Gerichte"
     },
-
     {
         id: "hearty",
         name: "Herzhaft & Deftig",
-        emoji: "🍖",
+        icon: "./assets/images/chicken-leg.png",
         description: "Du magst kräftige Gerichte mit viel Geschmack.",
         color: "#b91c1c",
 
@@ -69,19 +67,18 @@ export const profiles = [
         ctaText:
             "Entdecke herzhafte Lieblingsgerichte"
     },
-
     {
         id: "premium",
         name: "Genuss & Premium",
-        emoji: "💎",
+        icon: "./assets/images/jewelry.png",
         description: "Für dich steht Qualität und besonderer Genuss im Vordergrund.",
         color: "#8b5cf6",
 
         recommendations: [
             "Premium-Gerichte",
             "Spezialitäten",
-            "Besondere Menüs",
-            "Hochwertige Zutaten"
+            "Fisch & Meeresfrüchte",
+            "Wein & Spirituosen"
         ],
 
         ctaText:

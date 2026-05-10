@@ -106,7 +106,7 @@ button {
 }
 
 #app {
-  min-height: calc(100vh - 4rem);
+  min-height: calc(100dvh - 4rem);
   display: flex;
   justify-content: center;
   padding: 1rem clamp(1rem, 4vw, 4rem);

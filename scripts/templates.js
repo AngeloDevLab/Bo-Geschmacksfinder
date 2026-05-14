@@ -33,11 +33,9 @@ export function getResultsTemplate(topResult, results) {
 
             </div>
 
-            <a href="https://www.bofrost.de" target="_blank">
-                <button id="cta-btn">
-                    ${topResult.ctaText}
-                </button>
-            </a>
+            <button id="cta-btn">
+                ${topResult.ctaText}
+            </button>
 
         </div>
     `;

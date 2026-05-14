@@ -34,13 +34,11 @@ export function renderSelectionInfo(question, selectedCount) {
 
     if (question.type === "single") {
         info.textContent = "Bitte 1 Antwort auswählen";
-
         return;
     }
 
     if (selectedCount >= question.maxSelections) {
         info.textContent = "Maximale Auswahl erreicht";
-
         return;
     }
 

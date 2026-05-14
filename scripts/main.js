@@ -13,6 +13,12 @@ import {
     renderSelectionInfo
 } from "./ui.js";
 
+import {
+    trackPageVisit,
+    trackQuizCompleted,
+    trackCtaClicked
+} from "./tracking.js";
+
 const nextBtn = document.getElementById("next-btn");
 window.addEventListener("DOMContentLoaded", init);
 
@@ -20,10 +26,12 @@ function init() {
     bindEvents();
     loadQuestion();
     updateNextButton();
+    trackPageVisit();
 }
 
 function bindEvents() {
     nextBtn.addEventListener("click", nextQuestion);
+    document.addEventListener("click", handleGlobalClick);
 }
 
 function loadQuestion() {
@@ -105,5 +113,17 @@ function nextQuestion() {
     }
 
     const results = calculateResults();
+    trackQuizCompleted();
     renderResults(results);
+}
+
+function handleGlobalClick(event) {
+    if (event.target.closest("#cta-btn")) {
+        handleCtaClick();
+    }
+}
+
+function handleCtaClick() {
+    trackCtaClicked();
+    window.open("https://www.bofrost.de", "_blank");
 }

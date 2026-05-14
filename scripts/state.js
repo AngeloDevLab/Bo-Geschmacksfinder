@@ -1,8 +1,6 @@
 export const state = {
     currentQuestion: 0,
-
     selectedAnswers: [],
-
     score: {
         fast: 0,
         comfort: 0,
